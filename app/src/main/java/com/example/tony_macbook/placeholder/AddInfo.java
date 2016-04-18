@@ -13,4 +13,6 @@ public class AddInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addinfo);
     }
+
+
 }
