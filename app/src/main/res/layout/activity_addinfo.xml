@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:nestedScrollingEnabled="false"
+    android:scrollIndicators="right"
+    android:textAlignment="gravity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="629dp"
+        android:weightSum="1">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="40dp">
+            android:layout_height="40dp"
+            android:textAlignment="textStart">
 
             <Button
                 android:layout_width="match_parent"
@@ -21,8 +26,9 @@
                 android:id="@+id/button"
                 android:background="#ffffff"
                 android:textColor="#000000"
-                android:textSize="18dp"
-                android:clickable="false" />
+                android:textSize="25dp"
+                android:clickable="false"
+                android:textStyle="bold|italic" />
         </LinearLayout>
 
         <Space
@@ -40,15 +46,17 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Event Name:"
                 android:id="@+id/textView3"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginLeft="10px" />
 
             <Space
-                android:layout_width="20px"
-                android:layout_height="20px" />
+                android:layout_width="15px"
+                android:layout_height="15px" />
 
             <EditText
-                android:layout_width="239dp"
-                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/editText2"
@@ -58,16 +66,15 @@
                 android:textSize="12dp"
                 android:textStyle="normal"
                 android:scrollIndicators="right"
-                android:nestedScrollingEnabled="false" />
+                android:nestedScrollingEnabled="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20px" />
 
-            <Space
-                android:layout_width="20px"
-                android:layout_height="20px" />
         </LinearLayout>
 
         <Space
             android:layout_width="20px"
-            android:layout_height="50px" />
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -82,15 +89,16 @@
                 android:id="@+id/textView"
                 android:textColor="#000000"
                 android:clickable="false"
-                android:editable="false" />
+                android:editable="false"
+                android:layout_marginLeft="10px" />
 
             <Space
                 android:layout_width="20px"
                 android:layout_height="50px" />
 
             <ExpandableListView
-                android:layout_width="269dp"
-                android:layout_height="75dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/expandableListView"
                 android:visibility="visible"
                 android:textFilterEnabled="false"
@@ -99,17 +107,19 @@
                 android:choiceMode="singleChoice"
                 android:contextClickable="false"
                 android:drawSelectorOnTop="false"
-                android:touchscreenBlocksFocus="false" />
+                android:touchscreenBlocksFocus="false"
+                android:layout_marginRight="10px" />
         </LinearLayout>
 
         <Space
             android:layout_width="20px"
-            android:layout_height="50px" />
+            android:layout_height="20px" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -125,15 +135,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
 
             <Space
                 android:layout_width="20px"
                 android:layout_height="20px" />
 
             <EditText
-                android:layout_width="339dp"
-                android:layout_height="175dp"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
                 android:id="@+id/editText"
                 android:visibility="visible"
                 android:enabled="true"
@@ -147,10 +158,11 @@
 
                 android:singleLine="false"
 
-                android:layout_weight="0.88"
                 android:gravity="start"
                 android:nestedScrollingEnabled="false"
-                android:inputType="text" />
+                android:inputType="text"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px" />
 
             <Space
                 android:layout_width="20px"
@@ -164,20 +176,21 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="146dp"
+            android:layout_height="164dp"
             android:gravity="center"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:layout_weight="0.25">
 
             <Button
                 android:layout_width="214dp"
                 android:layout_height="72dp"
-                android:text="Upload Photo/Flyer"
+                android:text="Upload Photo"
                 android:id="@+id/button2"
                 android:background="#3f8ddc" />
 
             <Space
                 android:layout_width="20px"
-                android:layout_height="20px" />
+                android:layout_height="150px" />
 
             <Button
                 android:layout_width="wrap_content"
