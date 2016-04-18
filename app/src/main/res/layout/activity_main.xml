@@ -20,42 +20,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
-            android:id="@+id/button"
-            android:layout_weight="0.04"
+            android:id="@+id/space_button2"
             android:visibility="invisible"
             android:textSize="@dimen/abc_text_size_caption_material" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="280dp"
+            android:layout_height="105dp"
             android:text="Search"
             android:id="@+id/mmenu_but_search"
-            android:layout_weight="0.33"
             android:visibility="visible"
             android:textSize="24dp"
             android:background="#3f8ddc"
             android:focusableInTouchMode="true"
             android:enabled="true"
             android:typeface="normal"
-            android:textStyle="bold|normal" />
+            android:textStyle="bold|normal"
+            android:layout_gravity="center"
+            android:layout_weight="0.21" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
-            android:id="@+id/button3"
-            android:layout_weight="0.05"
+            android:id="@+id/space_button1"
+            android:layout_weight="0.16"
             android:visibility="invisible" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="280dp"
+            android:layout_height="105dp"
             android:text="Add Information"
             android:id="@+id/mmain_but_addinfo"
-            android:layout_weight="0.34"
             android:textSize="24dp"
             android:background="#3f8ddc"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_weight=".21" />
     </LinearLayout>
 
 </RelativeLayout>
