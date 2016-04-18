@@ -95,7 +95,11 @@
                 android:visibility="visible"
                 android:textFilterEnabled="false"
                 android:smoothScrollbar="false"
-                android:clickable="true" />
+                android:clickable="true"
+                android:choiceMode="singleChoice"
+                android:contextClickable="false"
+                android:drawSelectorOnTop="false"
+                android:touchscreenBlocksFocus="false" />
         </LinearLayout>
 
         <Space
@@ -152,6 +156,35 @@
                 android:layout_width="20px"
                 android:layout_height="20px" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="214dp"
+                android:layout_height="72dp"
+                android:text="Upload Photo/Flyer"
+                android:id="@+id/button2" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/button3" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
