@@ -21,28 +21,41 @@
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/button"
-            android:layout_weight="0.11" />
+            android:layout_weight="0.04"
+            android:visibility="invisible"
+            android:textSize="@dimen/abc_text_size_caption_material" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2"
-            android:layout_weight="0.11" />
+            android:text="Search"
+            android:id="@+id/mmenu_but_search"
+            android:layout_weight="0.33"
+            android:visibility="visible"
+            android:textSize="24dp"
+            android:background="#3f8ddc"
+            android:focusableInTouchMode="true"
+            android:enabled="true"
+            android:typeface="normal"
+            android:textStyle="bold|normal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/button3"
-            android:layout_weight="0.12" />
+            android:layout_weight="0.05"
+            android:visibility="invisible" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button4"
-            android:layout_weight="0.16" />
+            android:text="Add Information"
+            android:id="@+id/mmain_but_addinfo"
+            android:layout_weight="0.34"
+            android:textSize="24dp"
+            android:background="#3f8ddc"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </RelativeLayout>
