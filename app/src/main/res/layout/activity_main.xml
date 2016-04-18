@@ -39,7 +39,7 @@
             android:focusableInTouchMode="true"
             android:enabled="true"
             android:typeface="normal"
-            android:textStyle="bold|normal"
+            android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_weight="0.21"
             android:clickable="true" />
@@ -62,7 +62,9 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_weight=".21"
-            android:clickable="true" />
+            android:clickable="true"
+            android:textAlignment="center"
+            android:typeface="normal" />
     </LinearLayout>
 
 </RelativeLayout>
