@@ -23,8 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Information Form"
-                android:id="@+id/button"
-                android:background="#ffffff"
+                android:id="@+id/info_title"
+                android:background="@drawable/rectangle"
                 android:textColor="#000000"
                 android:textSize="25dp"
                 android:clickable="false"
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Event Name:"
-                android:id="@+id/textView3"
+                android:id="@+id/lbl_event_name"
                 android:textColor="#000000"
                 android:gravity="center"
                 android:layout_marginLeft="10px" />
@@ -59,7 +59,7 @@
                 android:layout_height="30dp"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/editText2"
+                android:id="@+id/event_id"
                 android:textColor="#000000"
                 android:editable="true"
                 android:background="@drawable/rectangle"
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Category:"
-                android:id="@+id/textView"
+                android:id="@+id/lbl_category"
                 android:textColor="#000000"
                 android:clickable="false"
                 android:editable="false"
@@ -99,7 +99,7 @@
             <ExpandableListView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/expandableListView"
+                android:id="@+id/category_sel"
                 android:visibility="visible"
                 android:textFilterEnabled="false"
                 android:smoothScrollbar="false"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Other Details:"
-                android:id="@+id/textView2"
+                android:id="@+id/lbl_other_details"
                 android:textColor="#000000" />
         </LinearLayout>
 
@@ -145,7 +145,7 @@
             <EditText
                 android:layout_width="350dp"
                 android:layout_height="150dp"
-                android:id="@+id/editText"
+                android:id="@+id/add_details"
                 android:visibility="visible"
                 android:enabled="true"
                 android:editable="true"
@@ -160,7 +160,7 @@
 
                 android:gravity="start"
                 android:nestedScrollingEnabled="false"
-                android:inputType="text"
+                android:inputType="textMultiLine"
                 android:layout_marginLeft="10px"
                 android:layout_marginRight="10px" />
 
@@ -185,7 +185,7 @@
                 android:layout_width="214dp"
                 android:layout_height="72dp"
                 android:text="Upload Photo"
-                android:id="@+id/button2"
+                android:id="@+id/upload_photo"
                 android:background="#3f8ddc" />
 
             <Space
@@ -196,7 +196,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Submit"
-                android:id="@+id/button3"
+                android:id="@+id/submit_info"
                 android:background="#3f8ddc" />
         </LinearLayout>
 
