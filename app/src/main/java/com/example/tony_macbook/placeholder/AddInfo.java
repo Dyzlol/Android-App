@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 /**
  * Created by Tony-MacBook on 4/18/16.
@@ -39,6 +41,11 @@ public class AddInfo extends AppCompatActivity  {
                 saveDialog.show();
             }
         });
+
+        Spinner dropdown = (Spinner)findViewById(R.id.spinner1);
+        String[] items = new String[]{"Canned Food", "Clothing Drive", "Shelter", "Other"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        dropdown.setAdapter(adapter);
 
         // Submit Button
         Button submitButton = (Button) findViewById(R.id.submit_info);

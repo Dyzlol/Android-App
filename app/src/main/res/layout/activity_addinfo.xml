@@ -99,19 +99,13 @@
                 android:layout_width="20px"
                 android:layout_height="50px" />
 
-            <ExpandableListView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/category_sel"
-                android:visibility="visible"
-                android:textFilterEnabled="false"
-                android:smoothScrollbar="false"
-                android:clickable="true"
-                android:choiceMode="singleChoice"
-                android:contextClickable="false"
-                android:drawSelectorOnTop="false"
-                android:touchscreenBlocksFocus="false"
-                android:layout_marginRight="10px" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:visibility="visible" />
         </LinearLayout>
 
         <Space
