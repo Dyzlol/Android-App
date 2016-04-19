@@ -21,21 +21,20 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
             android:text="New Button"
             android:id="@+id/space_button2"
-            android:layout_weight="0.07"
             android:visibility="invisible"
             android:textSize="@dimen/abc_text_size_caption_material" />
 
         <Button
             android:layout_width="280dp"
-            android:layout_height="105dp"
+            android:layout_height="75dp"
             android:text="Search"
             android:id="@+id/mmenu_but_search"
             android:visibility="visible"
             android:textSize="24dp"
-            android:background="#3f8ddc"
+            android:background="@drawable/rounded_buttons"
             android:focusableInTouchMode="true"
             android:enabled="true"
             android:typeface="normal"
@@ -49,16 +48,36 @@
             android:layout_height="wrap_content"
             android:text="New Button"
             android:id="@+id/space_button1"
-            android:layout_weight="0.16"
             android:visibility="invisible" />
 
         <Button
             android:layout_width="280dp"
-            android:layout_height="105dp"
+            android:layout_height="75dp"
             android:text="Add Information"
             android:id="@+id/mmain_but_addinfo"
             android:textSize="24dp"
-            android:background="#3f8ddc"
+            android:background="@drawable/rounded_buttons"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_weight=".21"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:typeface="normal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="75dp"
+            android:text="Placeholder"
+            android:id="@+id/ph_button"
+            android:textSize="24dp"
+            android:background="@drawable/rounded_buttons"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_weight=".21"
