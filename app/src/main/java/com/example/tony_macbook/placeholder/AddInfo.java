@@ -18,6 +18,7 @@ public class AddInfo extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addinfo);
 
+        // Upload Photo
         Button uploadButton = (Button) findViewById(R.id.upload_photo);
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,15 +40,15 @@ public class AddInfo extends AppCompatActivity  {
             }
         });
 
+        // Submit Button
         Button submitButton = (Button) findViewById(R.id.submit_info);
         submitButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick (View v) {
-                    Intent intent = new Intent(AddInfo.this, AddInfo.class);
+                    Intent intent = new Intent(AddInfo.this, SubmitConfirmation.class);
                     startActivity(intent);
                 }
         });
-
 
     }
 
