@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Events>
+    <Event>
+        <ID>1</ID>
+        <Name>Bob's Shelter</Name>
+        <Categories>
+            <Category>Shelter</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>8301 Baltimore Ave College Park MD, 20740</StreetAddress>
+        <Distance>0.3</Distance>
+        <Date>5/20/2016</Date>
+        <Time>10am</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>2</ID>
+        <Name>Caring Arms</Name>
+        <Categories>
+            <Category>Shelter</Category>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>7423 Baltimore Ave College Park, MD 20740</StreetAddress>
+        <Distance>0.7</Distance>
+        <Date>5/18/2016</Date>
+        <Time>6pm</Time>
+        <OpenNow>False</OpenNow>
+    </Event>
+    <Event>
+        <ID>3</ID>
+        <Name>Sarah's Hope</Name>
+        <Categories>
+            <Category>Shelter</Category>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a desription</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>5331 Baltimore Ave, Hyattsville MD, 20781</StreetAddress>
+        <Distance>2.5</Distance>
+        <Date>5/21/2016</Date>
+        <Time>9am</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>4</ID>
+        <Name>Stepping Stone Shelter</Name>
+        <Categories>
+            <Category>Shelter</Category>
+        </Categories>
+        <Description></Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>3621 Campus Drive College Park, MD 20740</StreetAddress>
+        <Distance>1.1</Distance>
+        <Date>5/19/2016</Date>
+        <Time></Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    
+    <Event>
+        <ID>5</ID>
+        <Name>Denny's Brunch</Name>
+        <Categories>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>8424 Baltimore Ave College Park, MD 20740</StreetAddress>
+        <Distance>0.5</Distance>
+        <Date>5/19/2016</Date>
+        <Time>12pm</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>6</ID>
+        <Name></Name>
+        <Categories>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress> College Park, MD 20740</StreetAddress>
+        <Distance></Distance>
+        <Date></Date>
+        <Time></Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>7</ID>
+        <Name>Georgia's Kitchen</Name>
+        <Categories>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>4511 Knox Road College Park, MD 20740</StreetAddress>
+        <Distance>0.8</Distance>
+        <Date>5/22/2016</Date>
+        <Time>6am</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>8</ID>
+        <Name>Brunch on Us</Name>
+        <Categories>
+            <Category>Food</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>4954 Lakeland Road College Park, MD 20740</StreetAddress>
+        <Distance>0.5</Distance>
+        <Date>5/21/2016</Date>
+        <Time>10am</Time>
+        <OpenNow>False</OpenNow>
+    </Event>
+    
+    <Event>
+        <ID>9</ID>
+        <Name>Doc in the Box</Name>
+        <Categories>
+            <Category>Health</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>4701 Melbourne Plaza College Park, MD 20740</StreetAddress>
+        <Distance>0.3</Distance>
+        <Date></Date>
+        <Time></Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>10</ID>
+        <Name>Patient First</Name>
+        <Categories>
+            <Category>Health</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>8900 Baltimore Ave College Park, MD 20740</StreetAddress>
+        <Distance>0.9</Distance>
+        <Date>5/24/2016</Date>
+        <Time>8am</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    
+    <Event>
+        <ID>11</ID>
+        <Name>Job Skills Workshop</Name>
+        <Categories>
+            <Category>Skills</Category>
+            <Category>Job</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>8680 Baltimore Ave College Park, MD 20740</StreetAddress>
+        <Distance>2.0</Distance>
+        <Date>5/23/2016</Date>
+        <Time>1pm</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>12</ID>
+        <Name>Alcoholics Anonymous</Name>
+        <Categories>
+            <Category>Skills</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>8150 Baltimore Ave College Park, MD 20740</StreetAddress>
+        <Distance>0.2</Distance>
+        <Date>5/20/2016</Date>
+        <Time>6pm</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+    <Event>
+        <ID>13</ID>
+        <Name>UMD Career Center</Name>
+        <Categories>
+            <Category>Skills</Category>
+            <Category>Job</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>4130 Campus Drive College Park, MD 20740</StreetAddress>
+        <Distance>0.4</Distance>
+        <Date>5/18</Date>
+        <Time>5pm</Time>
+        <OpenNow>False</OpenNow>
+    </Event>
+    <Event>
+        <ID>14</ID>
+        <Name>Awesome Shelter</Name>
+        <Categories>
+            <Category>Shelter</Category>
+            <Category>Food</Category>
+            <Category>Health</Category>
+            <Category>Skills</Category>
+            <Category>Job</Category>
+        </Categories>
+        <Description>This is a description</Description>
+        <Image></Image>
+        <Latitude></Latitude>
+        <Longitude></Longitude>
+        <StreetAddress>1985 Corporal Frank Scott Drive College Park, MD 20740</StreetAddress>
+        <Distance>1.5</Distance>
+        <Date>5/18/2016</Date>
+        <Time>11am</Time>
+        <OpenNow>True</OpenNow>
+    </Event>
+</Events>
