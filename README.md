@@ -20,8 +20,8 @@ Functions to Add/Complete:
 - Need App Name
 - Change button/App theme colors
 - Implement 
--- Searching
--- Xml storage of data and reading of data for search/input
+  -- Searching
+  -- Xml storage of data and reading of data for search/input
 
 
 
