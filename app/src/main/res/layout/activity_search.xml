@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:nestedScrollingEnabled="false"
+    android:scrollIndicators="right"
+    android:textAlignment="gravity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="257dp"
+            android:layout_height="209dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_weight="0.26"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Search Criteria:"
+            android:id="@+id/search_tag"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_criteria"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:background="@drawable/rectangle"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Category (Check all that apply):"
+            android:id="@+id/Category_tag"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="20px" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="20px">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_search_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Food"
+                android:id="@+id/food_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shelter_search_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Shelter"
+                android:id="@+id/shelter_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/health_search_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Health"
+                android:id="@+id/health_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_skills_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Skills"
+                android:id="@+id/skills_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_job_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Job"
+                android:id="@+id/job_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="85px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_other_chk_box"
+                android:checked="false"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/rectangle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Other"
+                android:id="@+id/other_lbl"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="15px" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/button2"
+            android:layout_marginTop="150px"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_buttons" />
+
+    </LinearLayout>
+</ScrollView>

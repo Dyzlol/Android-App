@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button fab = (Button) findViewById(R.id.mmain_but_addinfo);
+        Button fab1 = (Button) findViewById(R.id.mmenu_but_search);
 
         fab.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -22,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        fab1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Search.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

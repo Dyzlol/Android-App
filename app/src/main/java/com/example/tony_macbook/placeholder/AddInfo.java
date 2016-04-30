@@ -40,6 +40,7 @@ public class AddInfo extends AppCompatActivity  {
             }
         });
 
+        // Depreciated!!!!
         /* Spinner dropdown = (Spinner)findViewById(R.id.spinner1);
         String[] items = new String[]{"Canned Food", "Clothing Drive", "Shelter", "Other"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);

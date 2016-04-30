@@ -16,31 +16,22 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="41dp"
+            android:layout_height="150dp"
             android:textAlignment="textStart"
             android:layout_weight="0.18">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Add Event Information"
-                android:id="@+id/info_title"
-                android:background="@drawable/rectangle"
-                android:textColor="#000000"
-                android:textSize="25dp"
-                android:clickable="false"
-                android:textStyle="bold|italic" />
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/add_event"
+                android:layout_gravity="center" />
         </LinearLayout>
 
-        <Space
-            android:layout_width="20px"
-            android:layout_height="50px" />
-
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="20px"
             android:layout_marginTop="20px"
             android:layout_weight="0.16">
@@ -53,8 +44,9 @@
                 android:id="@+id/lbl_event_name"
                 android:textColor="#000000"
                 android:gravity="center"
-                android:layout_marginLeft="10px"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="24dp" />
 
             <Space
                 android:layout_width="15px"
@@ -73,8 +65,9 @@
                 android:textStyle="normal"
                 android:scrollIndicators="right"
                 android:nestedScrollingEnabled="false"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginRight="20px" />
+                android:layout_gravity="center"
+                android:layout_marginRight="25px"
+                android:layout_marginLeft="25px" />
 
         </LinearLayout>
 
@@ -90,7 +83,9 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,8 +95,8 @@
                     android:id="@+id/Addr_input"
                     android:textColor="#000000"
                     android:gravity="center"
-                    android:layout_marginLeft="10px"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
 
                 <EditText
                     android:layout_width="fill_parent"
@@ -247,11 +242,13 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="145dp"
             android:weightSum="1"
-            android:layout_marginTop="20px"
+            android:layout_marginTop="25px"
             android:layout_marginBottom="20px"
-            android:layout_weight="3.22">
+            android:layout_weight="0.11"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px">
 
             <TextView
                 android:layout_width="337dp"
@@ -262,18 +259,17 @@
                 android:textColor="#000000"
                 android:clickable="false"
                 android:editable="false"
-                android:layout_marginLeft="10px"
                 android:textStyle="bold"
-                android:layout_marginBottom="20px" />
+                android:layout_marginBottom="20px"
+                android:layout_gravity="center" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20px"
-                android:layout_marginLeft="10px"
                 android:layout_marginTop="20px"
-                android:layout_marginRight="10px">
+                android:layout_gravity="center">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -352,8 +348,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20px"
                 android:layout_marginTop="20px"
-                android:layout_marginLeft="10px"
-                android:layout_marginRight="10px">
+                android:layout_gravity="center">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -386,7 +381,7 @@
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:background="@drawable/rectangle"
-                    android:layout_marginLeft="20px"
+                    android:layout_marginLeft="12px"
                     android:checked="false" />
 
                 <TextView
@@ -399,7 +394,7 @@
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="15px"
-                    android:layout_marginRight="50px" />
+                    android:layout_marginRight="85px" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -440,11 +435,9 @@
             android:layout_height="20px" />
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:layout_marginLeft="10px"
             android:layout_weight="0.17"
             android:weightSum="1">
 
@@ -456,10 +449,9 @@
                 android:id="@+id/lbl_other_details"
                 android:textColor="#000000"
                 android:textStyle="bold"
-                android:layout_weight="0.20"
-                android:layout_marginTop="20px"
                 android:layout_marginBottom="20px"
-                android:layout_marginLeft="10px" />
+                android:scrollIndicators="start"
+                android:layout_gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -521,7 +513,8 @@
                 android:id="@+id/upload_photo"
                 android:background="@drawable/rounded_buttons"
                 android:textStyle="bold"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:layout_marginTop="35px" />
 
             <Space
                 android:layout_width="20px"
@@ -534,7 +527,8 @@
                 android:id="@+id/submit_info"
                 android:background="@drawable/rounded_buttons"
                 android:textStyle="bold"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                android:layout_marginBottom="40px" />
         </LinearLayout>
 
     </LinearLayout>

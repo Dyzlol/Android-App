@@ -19,6 +19,13 @@
         android:weightSum="1"
         android:visibility="visible">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/hand_house"
+            android:layout_gravity="center" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="37dp"
@@ -30,7 +37,7 @@
         <Button
             android:layout_width="280dp"
             android:layout_height="75dp"
-            android:text="Search"
+            android:text="Search Information"
             android:id="@+id/mmenu_but_search"
             android:visibility="visible"
             android:textSize="24dp"
@@ -71,19 +78,6 @@
             android:id="@+id/button"
             android:visibility="invisible" />
 
-        <Button
-            android:layout_width="280dp"
-            android:layout_height="75dp"
-            android:text="Placeholder"
-            android:id="@+id/ph_button"
-            android:textSize="24dp"
-            android:background="@drawable/rounded_buttons"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:layout_weight=".21"
-            android:clickable="true"
-            android:textAlignment="center"
-            android:typeface="normal" />
     </LinearLayout>
 
 </RelativeLayout>
