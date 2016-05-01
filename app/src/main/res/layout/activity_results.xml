@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XMLPullParserActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Search Results"
+        android:textColor="#4381d9"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/text"
+        android:dividerHeight="3dp"
+        android:drawSelectorOnTop="false"
+        android:clickable="false"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/rectangle"
+        android:headerDividersEnabled="false"
+        android:divider="#489ff0"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+</RelativeLayout>
