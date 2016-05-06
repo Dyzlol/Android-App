@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="#cfcfcf"
     android:nestedScrollingEnabled="false"
     android:scrollIndicators="right"
     android:textAlignment="gravity">
@@ -16,13 +16,12 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:textAlignment="textStart"
-            android:layout_weight="0.18">
+            android:layout_height="108dp"
+            android:textAlignment="textStart">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="229dp"
+                android:layout_height="89dp"
                 android:id="@+id/imageView3"
                 android:src="@drawable/add_event"
                 android:layout_gravity="center" />
@@ -34,7 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20px"
             android:layout_marginTop="20px"
-            android:layout_weight="0.16">
+            android:layout_weight="0.16"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -45,8 +46,8 @@
                 android:textColor="#000000"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:layout_gravity="center"
-                android:textSize="24dp" />
+                android:textSize="20dp"
+                android:layout_gravity="left" />
 
             <Space
                 android:layout_width="15px"
@@ -65,9 +66,7 @@
                 android:textStyle="normal"
                 android:scrollIndicators="right"
                 android:nestedScrollingEnabled="false"
-                android:layout_gravity="center"
-                android:layout_marginRight="25px"
-                android:layout_marginLeft="25px" />
+                android:layout_gravity="center|right" />
 
         </LinearLayout>
 
@@ -78,7 +77,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="166dp" >
+            android:layout_height="166dp"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -96,7 +96,8 @@
                     android:textColor="#000000"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="left"
+                    android:textSize="20dp" />
 
                 <EditText
                     android:layout_width="fill_parent"
@@ -111,9 +112,7 @@
                     android:textStyle="normal"
                     android:scrollIndicators="right"
                     android:nestedScrollingEnabled="false"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginRight="20px"
-                    android:layout_marginLeft="20px" />
+                    android:layout_gravity="center_horizontal" />
 
                 <Space
                     android:layout_width="20px"
@@ -263,13 +262,15 @@
                 android:layout_marginBottom="20px"
                 android:layout_gravity="center" />
 
-            <LinearLayout
+            <GridLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20px"
                 android:layout_marginTop="20px"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -340,15 +341,17 @@
                     android:layout_marginLeft="15px"
                     android:layout_marginRight="50px" />
 
-            </LinearLayout>
+            </GridLayout>
 
-            <LinearLayout
+            <GridLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20px"
                 android:layout_marginTop="20px"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -394,7 +397,8 @@
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:layout_marginLeft="15px"
-                    android:layout_marginRight="85px" />
+                    android:layout_marginRight="85px"
+                    android:layout_gravity="right" />
 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -418,7 +422,7 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="15px"
                     android:layout_marginRight="50px" />
-            </LinearLayout>
+            </GridLayout>
 
             <Space
                 android:layout_width="20px"
@@ -507,8 +511,8 @@
             android:layout_weight="0.25">
 
             <Button
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
                 android:text="Upload Photo"
                 android:id="@+id/upload_photo"
                 android:background="@drawable/rounded_buttons"
@@ -527,7 +531,7 @@
                 android:id="@+id/submit_info"
                 android:background="@drawable/rounded_buttons"
                 android:textStyle="bold"
-                android:textSize="16dp"
+                android:textSize="18dp"
                 android:layout_marginBottom="40px" />
         </LinearLayout>
 

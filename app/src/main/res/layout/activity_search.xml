@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
+    android:background="#cfcfcf"
     android:nestedScrollingEnabled="false"
     android:scrollIndicators="right"
     android:textAlignment="gravity">
@@ -14,12 +14,10 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="257dp"
-            android:layout_height="209dp"
+            android:layout_width="213dp"
+            android:layout_height="173dp"
             android:id="@+id/imageView2"
-            android:src="@drawable/search"
             android:layout_gravity="center"
-            android:layout_weight="0.26"
             android:layout_marginBottom="40px"
             android:layout_marginTop="40px" />
 
@@ -27,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Enter Search Criteria:"
+            android:text="What are you looking for?"
             android:id="@+id/search_tag"
             android:textSize="20dp"
             android:textColor="#000000"
@@ -58,7 +56,8 @@
             android:textStyle="bold"
             android:layout_marginBottom="10px"
             android:layout_marginTop="50px"
-            android:layout_marginLeft="20px" />
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" />
 
         <LinearLayout
             android:orientation="horizontal"
