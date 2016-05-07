@@ -1,24 +1,24 @@
 # CMSC434-Team-Assignment
-Project Title: Neighbor-2-Neighbor
-Group Android Project - App development for Helping those in need
+###Project Title: Neighbor-2-Neighbor
+####Group Android Project - App development for Helping those in need
 
 
-Authors:
+##Authors:
 - Amelia Bateman
 - Zifan
 - Michelle Cody
 - Tony Young
 
 
-Application Description:
+##Application Description:
 - Application is designed to help those looking for aid by allowing them to search by resource/location. The application also has the provider in mind by allowing end-users to upload helpful events/locations to aid with current flow of resource availability.
 
 
-Installation/Notes:
+##Installation/Notes:
 - Designed/Tested to work on my Nexus 6p (currently implemented on API 18) so mileage may vary
 
 
-TODO:
+##TODO:
 - Need to add page before AddInfo that shows/verifies correct input prior to thank-you page.
 - Implement upload flyer/image (or use camera.. maybe both!)
 - Clean up Search Activity
@@ -29,6 +29,6 @@ TODO:
 - Clean out old files/Code Cleanup
 
 
-Bugs:
+##Bugs:
 - Currently a known bug with the URI used to open google maps, and how it is populated. Extra '+''s are being input, but no known actual implecations in the use of the app have been seen by this. 
 - A Random Crash occaisonally that has not been able to be narrowed down to anything
