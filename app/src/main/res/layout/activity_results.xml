@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".XMLPullParserActivity"
-    android:background="#ffffff">
+    android:background="#cfcfcf">
 
     <TextView
         android:id="@+id/text"
@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Search Results"
-        android:textColor="#4381d9"
+        android:textColor="#5e70bf"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -28,7 +28,7 @@
         android:choiceMode="singleChoice"
         android:background="@drawable/rectangle"
         android:headerDividersEnabled="false"
-        android:divider="#489ff0"
+        android:divider="#5e70bf"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp" />
 </RelativeLayout>
