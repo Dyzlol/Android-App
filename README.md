@@ -11,7 +11,7 @@ Authors:
 
 
 Application Description:
-Application is designed to help those looking for aid by allowing them to search by resource/location. The application also has the provider in mind by allowing end-users to upload helpful events/locations to aid with current flow of resource availability.
+- Application is designed to help those looking for aid by allowing them to search by resource/location. The application also has the provider in mind by allowing end-users to upload helpful events/locations to aid with current flow of resource availability.
 
 
 Installation/Notes:
