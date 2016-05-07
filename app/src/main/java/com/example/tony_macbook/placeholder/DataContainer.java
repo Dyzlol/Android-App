@@ -11,6 +11,21 @@ public class DataContainer {
     private String time;
     private String address;
     private String date;
+    private String google_addr = "http://maps.google.co.in/maps?q=";
+
+    private void setGoogleAddress(String str) {
+        for(int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) == ',' || str.charAt(i) == ' ') {
+                google_addr += '+';
+            } else {
+                google_addr += str.charAt(i);
+            }
+        }
+    }
+
+    public String getGoogleAddr() {
+        return google_addr;
+    }
 
     public String getName() {
         return name;
@@ -52,7 +67,6 @@ public class DataContainer {
         this.description = description;
     }
 
-
     public String getTime() {
         return time;
     }
@@ -71,8 +85,16 @@ public class DataContainer {
 
     @Override
     public String toString() {
-        return id + ": " + name + "\n" + description + "-" + time
-                + "\n" + address + date;
+        String cats = "Categories: ";
+
+        for (String x: categories) {
+            cats += x + " ";
+        }
+
+        setGoogleAddress(this.address);
+
+        return "Event/Loc Name: " + name + "\n" + "Description: " + description + "\n" +
+                cats + "\n" + "Address: \n" + address;
     }
 
 }
