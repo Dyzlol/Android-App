@@ -11,14 +11,16 @@ import android.support.v4.app.ActivityCompat;
 
 /**
  * Created by jon on 3/16/2016.
+ * *****************************************
+ * *** Needs updating/fixed before using
+ * *** in our AddInfo to store/capture flyers
+ * *****************************************
  */
 public final class FileUtils {
     private FileUtils(){}
 
     /**
      * Checks if external storage is available for read and write
-     * See: http://developer.android.com/training/basics/data-storage/files.html
-     * @return
      */
     public static boolean isExternalStorageWritable() {
         String state = Environment.getExternalStorageState();

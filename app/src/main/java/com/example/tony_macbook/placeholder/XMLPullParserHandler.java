@@ -10,48 +10,62 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+/*************************************************
+ * Public Class - XMLPullParserHandler
+ * ***  Implements Androids XML Parsing Methods
+ */
 public class XMLPullParserHandler {
+
+    // Declarations
     List<DataContainer> events;
     private DataContainer event;
     private String text;
 
+    // Constructor
     public XMLPullParserHandler() {
         events = new ArrayList<DataContainer>();
     }
 
+    // Getter *** Returns List of DataContainers
     public List<DataContainer> getDataSets() {
         return events;
     }
 
+    // Public Method to Parse XML Input
     public List<DataContainer> parse(InputStream is) {
         XmlPullParserFactory factory = null;
         XmlPullParser parser = null;
+
+        // TryBlock:Begin
         try {
             factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(true);
             parser = factory.newPullParser();
-
             parser.setInput(is, null);
 
             int eventType = parser.getEventType();
             while (eventType != XmlPullParser.END_DOCUMENT) {
                 String tagname = parser.getName();
+
                 switch (eventType) {
+
+                    // Start of tag
                     case XmlPullParser.START_TAG:
                         if (tagname.equalsIgnoreCase("event")) {
-                            // create a new instance of dataSet
+                            // create a new instance of dataSet since its a new event tag
                             event = new DataContainer();
                         }
                         break;
 
+                    // Not end/start tag - So store data
                     case XmlPullParser.TEXT:
                         text = parser.getText();
                         break;
 
+                    // Found end tag - Update event container or add it to list
                     case XmlPullParser.END_TAG:
                         if (tagname.equalsIgnoreCase("event")) {
-                            // add event
+                            // add event to list since we are at end
                             events.add(event);
                         } else if (tagname.equalsIgnoreCase("name")) {
                             event.setName(text);
@@ -68,32 +82,33 @@ public class XMLPullParserHandler {
                         } else if (tagname.equalsIgnoreCase("category")) {
                             event.setCategories(text);
                         } else if (tagname.equalsIgnoreCase("categories")) {
-                            // do nothing
+                            // do nothing currently
                         } else if (tagname.equalsIgnoreCase("image")) {
-                            // do nothing
+                            // do nothing currently
                         }else if (tagname.equalsIgnoreCase("latitude")) {
-                            // do nothing
+                            // do nothing currently
                         } else if (tagname.equalsIgnoreCase("longitude")) {
-                            // do nothing
+                            // do nothing currently
                         } else if (tagname.equalsIgnoreCase("opennow")) {
-                            // do nohting
+                            // do nohting currently
                         } else if (tagname.equalsIgnoreCase("distance")) {
-                            // do nothing
+                            // do nothing currently
                         }
                         break;
 
                     default:
                         break;
                 }
-                eventType = parser.next();
+                eventType = parser.next(); // iterate
             }
-
+        // TryBlock:END - Begin:Exceptions
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        // Return our List of DataContainers
         return events;
     }
 }
