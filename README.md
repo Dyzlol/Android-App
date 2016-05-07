@@ -1,6 +1,6 @@
 # CMSC434-Team-Assignment
-###Project Title: Neighbor-2-Neighbor
-####Group Android Project - App development for Helping those in need
+#####Project Title: Neighbor-2-Neighbor
+######Group Android Project - App development for Helping those in need
 
 
 ##Authors:
@@ -11,11 +11,11 @@
 
 
 ##Application Description:
-- Application is designed to help those looking for aid by allowing them to search by resource/location. The application also has the provider in mind by allowing end-users to upload helpful events/locations to aid with current flow of resource availability.
+Application is designed to help those looking for aid by allowing them to search by resource/location. The application also has the provider in mind by allowing end-users to upload helpful events/locations to aid with current flow of resource availability.
 
 
 ##Installation/Notes:
-- Designed/Tested to work on my Nexus 6p (currently implemented on API 18) so mileage may vary
+Designed/Tested to work on my Nexus 6p (currently implemented on API 18) so mileage may vary
 
 
 ##TODO:
