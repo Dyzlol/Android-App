@@ -116,7 +116,7 @@ public class DataContainer {
 
         // To-String Return
         return "Event/Loc Name: " + name + "\n" + "Description: " + description + "\n" +
-                cats + "\n" + "Address: \n" + address;
+                cats;
     }
 
 }
