@@ -5,7 +5,7 @@
 
 ##Authors:
 - Amelia Bateman
-- Zifan
+- Zifan Xiao
 - Michelle Cody
 - Tony Young
 
