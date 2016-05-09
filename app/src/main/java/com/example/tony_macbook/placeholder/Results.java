@@ -46,7 +46,7 @@ public class Results extends AppCompatActivity {
         try {
             XMLPullParserHandler parser = new XMLPullParserHandler();
             dataSet = parser.parse(getAssets().open("data.xml"));
-            ArrayAdapter<DataContainer> adapter = new ArrayAdapter<DataContainer>(this,R.layout.list_item, dataSet);
+            ArrayAdapter<DataContainer> adapter = new ArrayAdapter<DataContainer>(this,R.layout.list_item, R.id.Itemname, dataSet);
             listView.setAdapter(adapter);
         } catch (IOException e) {
             e.printStackTrace();

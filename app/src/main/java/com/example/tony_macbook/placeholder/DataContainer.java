@@ -104,19 +104,27 @@ public class DataContainer {
     @Override
     public String toString() {
 
-        // Create proper string for Categories
-        // TODO: Cleanup this to look better in output
-        String cats = "Categories: ";
-        for (String x: categories) {
-            cats += x + " ";
+        // Complete the GoogleAddress String for GoogleMaps
+        setGoogleAddress(address);
+
+        String ret_string = "Event/Loc Name: " + name + "\n";
+
+        if (description != "") {
+            ret_string += "Description: " + description;
         }
 
-        // Complete the GoogleAddress String for GoogleMaps
-        setGoogleAddress(this.address);
+        if (categories != null) {
+
+            String cats = "Categories: ";
+            for (String x: categories) {
+                cats += x + ", ";
+            }
+
+            ret_string += "\n" + cats.substring(0,cats.length()-2);
+        }
 
         // To-String Return
-        return "Event/Loc Name: " + name + "\n" + "Description: " + description + "\n" +
-                cats + "\n" + "Address: \n" + address;
+        return ret_string;
     }
 
 }
