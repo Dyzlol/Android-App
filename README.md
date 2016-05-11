@@ -15,7 +15,8 @@ Application is designed to help those looking for aid by allowing them to search
 
 
 ##Installation/Notes:
-Designed/Tested to work on my Nexus 6p (currently implemented on API 18) so mileage may vary
+- Designed/Tested to work on my Nexus 6p (currently implemented on API 18) so mileage may vary
+- Installation: Clone the Repository, Build the APK, Install the APK. If you need to be told how to do this, your in the wrong place.
 
 
 ##TODO:
